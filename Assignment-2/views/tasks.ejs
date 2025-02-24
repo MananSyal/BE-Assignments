@@ -1,0 +1,8 @@
+<h1>All Tasks</h1>
+<ul>
+    <% tasks.forEach(task => { %>
+        <li><a href="/task?id=<%= task.id %>"><%= task.name %></a></li>
+    <% }); %>
+</ul>
+<a href="/addTask">Add Task</a>
+
